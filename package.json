@@ -34,22 +34,20 @@
     "autod": "autod"
   },
   "files": [
-    "app.js",
-    "agent.js",
     "config",
-    "app"
+    "test{{name}}.test.js"
   ],
   "ci": {
     "version": "8, 10"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-socket.io-v3.git"
+    "url": "git+https://github.com/fsll-tech/egg-socket.io-v3.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/fsll-tech/egg-socket.io-v3/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-socket.io-v3#readme",
+  "homepage": "https://github.com/fsll-tech/egg-socket.io-v3#readme",
   "author": "",
   "license": "MIT"
 }
