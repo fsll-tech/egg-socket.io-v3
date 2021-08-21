@@ -38,8 +38,10 @@
     "autod": "autod"
   },
   "files": [
+    "app",
+    "lib",
     "config",
-    "test{{name}}.test.js"
+    "app.js"
   ],
   "ci": {
     "version": "8, 10"
