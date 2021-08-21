@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "eggPlugin": {
-    "name": "socketIoV3"
+    "name": "ioV3"
   },
   "keywords": [
     "egg",
     "eggPlugin",
     "egg-plugin"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "socket.io": "^3.0.0"
+  },
   "devDependencies": {
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",

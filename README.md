@@ -14,7 +14,7 @@ $ npm i egg-socket.io-v3 --save
 
 ```js
 // {app_root}/config/plugin.js
-exports.socketIoV3 = {
+exports.ioV3 = {
   enable: true,
   package: 'egg-socket.io-v3',
 };
@@ -24,7 +24,7 @@ exports.socketIoV3 = {
 
 ```js
 // {app_root}/config/config.default.js
-exports.socketIoV3 = {
+exports.ioV3 = {
 };
 ```
 

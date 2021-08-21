@@ -6,7 +6,7 @@ describe('test/socket.io-v3.test.js', () => {
   let app;
   before(() => {
     app = mock.app({
-      baseDir: 'apps/socket.io-v3-test',
+      baseDir: 'apps/socket.io-test',
     });
     return app.ready();
   });
@@ -17,7 +17,7 @@ describe('test/socket.io-v3.test.js', () => {
   it('should GET /', () => {
     return app.httpRequest()
       .get('/')
-      .expect('hi, socketIoV3')
+      .expect('hi, ioV3')
       .expect(200);
   });
 });
