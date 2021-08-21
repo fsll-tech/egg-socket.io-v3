@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "eggPlugin": {
-    "name": "ioV3"
+    "name": "io"
   },
   "keywords": [
     "egg",
@@ -21,7 +21,8 @@
     "egg-ci": "^1.11.0",
     "egg-mock": "^3.21.0",
     "eslint": "^5.13.0",
-    "eslint-config-egg": "^7.1.0"
+    "eslint-config-egg": "^7.1.0",
+    "socket.io-client": "^3.0.0"
   },
   "engines": {
     "node": ">=8.0.0"

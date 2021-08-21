@@ -1,5 +1,5 @@
 'use strict';
 
-module.exports = (options, app) => {
-
+module.exports = app => {
+  app.io;
 };

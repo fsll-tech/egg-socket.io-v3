@@ -2,9 +2,9 @@
 
 /**
  * egg-socket.io-v3 default config
- * @member Config#ioV3
+ * @member Config#io
  * @property {String} SOME_KEY - some description
  */
-exports.ioV3 = {
+exports.io = {
 
 };
