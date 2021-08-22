@@ -6,5 +6,7 @@
  * @property {String} SOME_KEY - some description
  */
 exports.io = {
-
+  path: '/socket.io',
+  serveClient: true,
+  connectTimeout: 45000,
 };

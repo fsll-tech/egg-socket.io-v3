@@ -1,16 +1,14 @@
 # egg-socket.io-v3
 
-<!--
-Description here.
--->
+本项目是 `eggjs` 的 `socket.io v3.x` 的插件
 
-## Install
+## 安装
 
 ```bash
-$ npm i egg-socket.io-v3 --save
+$ npm install git+ssh://git@github.com:fsll-tech/egg-socket.io-v3.git --save
 ```
 
-## Usage
+## 使用
 
 ```js
 // {app_root}/config/plugin.js
@@ -20,24 +18,47 @@ exports.io = {
 };
 ```
 
-## Configuration
+## 配置
 
 ```js
 // {app_root}/config/config.default.js
 exports.io = {
+  path: '/socket.io',
+  serveClient: true,
+  connectTimeout: 45000,
 };
 ```
 
-see [config/config.default.js](config/config.default.js) for more detail.
+这里的配置是 [Server API](https://socket.io/docs/v3/server-api/#new-Server-httpServer-options) 的 options 参数
 
-## Example
+```js
+// {app_root}/app/io/main.js
+'use strict';
 
-<!-- example here -->
+module.exports = io => {
+  io.on('connection', socket => {
+    //...
+  });
+};
+```
 
-## Questions & Suggestions
+添加一个 socket.io 的入口文件，这里可以执行初始化等操作
 
-Please open an issue [here](https://github.com/eggjs/egg/issues).
+```js
+// {app_root}/app.js
+'use strict';
 
-## License
+// 定义 io 入口文件
+const ioMain = require('./app/io/main');
 
-[MIT](LICENSE)
+module.exports = app => {
+  const { io } = app;
+  ioMain(io);
+};
+```
+
+在 `app.js` 加入这个入口文件
+
+## 例子
+
+[egg-socket.io-v3-demo](https://github.com/fsll-tech/egg-socket.io-v3-demo) 是一个使用本插件的完整项目
