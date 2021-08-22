@@ -1,6 +1,6 @@
 # egg-socket.io-v3
 
-本项目是 `eggjs` 的 `socket.io v3.x` 的插件
+本项目是 `eggjs` 的 `v3.x` 版本的 `socket.io` 插件
 
 ## 安装
 
